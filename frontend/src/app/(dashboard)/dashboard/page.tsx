@@ -1,7 +1,10 @@
 import React from 'react'
 
 export default function page() {
+
   return (
-    <div>pagina primer item</div>
+    <div>
+      primera pagina del dashboard
+    </div>
   )
 }

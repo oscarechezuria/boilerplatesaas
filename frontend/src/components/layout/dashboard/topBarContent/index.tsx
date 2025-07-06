@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation"
-import LeftContent from "./topBarContent/LeftContent";
-import RightContent from "./topBarContent/RightContent";
+import LeftContent from "./LeftContent";
+import RightContent from "./RightContent";
 
 type TopbarProps = {
   onMenuClick: () => void;

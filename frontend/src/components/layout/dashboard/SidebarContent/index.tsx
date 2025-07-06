@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CreditCard, Settings, X, ArrowLeftToLine } from "lucide-react"; 
 
 interface SidebarProps {
+  sidebarOpen?: boolean;
   onSelect?: () => void;
 }
 
@@ -13,9 +14,14 @@ const sidebarItems = [
   { title: "Cerrar Sesión", path: "/dashboard/sesion", icon: ArrowLeftToLine },
 ];
 
-export default function Sidebar({ onSelect }: SidebarProps) {
+
+export default function Sidebar({ onSelect, sidebarOpen }: SidebarProps) {
+
+  const sidebarClassname = `flex flex-col gap-12 bg-primary p-4 pt-12 lg:pl-12 lg:pr-4 fixed inset-0 z-50 transform transition-transform duration-300 ease-in-out ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0 `;
+
+
   return (
-    <aside className={`${onSelect ? 'w-full' : 'w-80'} min-h-screen bg-primary p-4 pt-12 lg:pl-12 lg:pr-4 flex flex-col gap-12`}>
+    <aside className={sidebarClassname}>
 
         {/* Menu icon */}
         <div className="flex justify-center">
