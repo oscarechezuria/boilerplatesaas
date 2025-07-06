@@ -7,8 +7,8 @@ import Hero from "@/src/components/layout/home/Hero";
 export default async function Home() {
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <main>
+    <div className="flex flex-col justify-center items-center gap-8">
+      <main className="flex flex-col gap-8">
         <Hero/>
         <Features/>
         <CTA/>

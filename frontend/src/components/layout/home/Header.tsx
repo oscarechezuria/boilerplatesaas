@@ -19,8 +19,8 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-secondary shadow-md sticky top-0 z-50 w-full rounded-2xl mt-2">
-      <div className=" px-4 sm:px-6 lg:px-8">
+    <header className="bg-secondary shadow-md sticky top-0 z-50 w-full rounded-2xl">
+      <div className="px-4 sm:px-6 lg:px-8">
         <section className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link className="flex items-center" href={"/"} >

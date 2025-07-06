@@ -4,18 +4,16 @@ import Button from "../../ui/Button"
 
 export default function Hero() {
   return (
-    <section className="py-20 lg:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+    <section>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl text-center font-bold text-primary mb-6 leading-tight">
             Build Better Products
             <span className="text-secondary block">Faster Than Ever</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-center text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
             Streamline your workflow with our powerful SaaS platform. Increase productivity, reduce costs, and scale
             your business with confidence.
           </p>
@@ -31,7 +29,7 @@ export default function Hero() {
 
           {/* Hero Image/Dashboard Preview */}
           <div className="relative max-w-5xl mx-auto">
-            <div className="bg-primary rounded-xl shadow-2xl p-4">
+            <div className="bg-primary rounded-xl shadow-2xl">
               <Image
                 src="/placeholder.svg?height=200&width=400"
                 alt="Dashboard Preview"
@@ -41,8 +39,7 @@ export default function Hero() {
               />
             </div>
           </div>
-        </div>
-      </div>
+
     </section>
   )
 }

@@ -30,7 +30,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en" className="flex flex-col items-center justify-center p-2">
-        <body className={`${geistSans.variable} ${geistMono.variable} flex flex-col justify-center items-center lg:w-3/4`}>
+        <body className={`${geistSans.variable} ${geistMono.variable} flex flex-col justify-center items-center lg:w-3/4 p-2`}>
           <Header/>
           {children}
         </body>

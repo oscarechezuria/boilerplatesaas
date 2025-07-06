@@ -35,10 +35,9 @@ export default function Features() {
   ]
 
   return (
-    <section id="features" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="features">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center p-4">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Everything you need to succeed</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Powerful features designed to help you build, grow, and scale your business efficiently.
@@ -60,7 +59,6 @@ export default function Features() {
             </div>
           ))}
         </div>
-      </div>
     </section>
   )
 }

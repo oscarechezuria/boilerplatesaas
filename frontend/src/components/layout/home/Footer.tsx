@@ -10,9 +10,8 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-primary text-secondary  ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+    <footer className="flex flex-col w-full bg-primary text-secondary">
+        <div>
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
@@ -36,9 +35,6 @@ export default function Footer() {
               ))}
             </div>
           </div>
-
-
-
         </div>
 
         {/* Bottom */}
@@ -46,7 +42,6 @@ export default function Footer() {
           <p className="text-gray-400 text-sm">© 2024 NombreApp. All rights reserved.</p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">Made with ❤️ for the future</p>
         </div>
-      </div>
     </footer>
   )
 }

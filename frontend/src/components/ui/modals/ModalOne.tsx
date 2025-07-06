@@ -149,7 +149,7 @@ export default function ModalOne({isOpen, setIsOpen, backdrop}: ModalProps) {
                 className={`hover:bg-blue-700 transition-colors duration-100`}
               >
                 <span>{currentStep === 2 ? "Finalizar" : "Siguiente"}</span>
-                {currentStep === 1 ? <span>→</span> : <span>✔</span>}
+                <span>{currentStep === 1 ? "→" : "✓"}</span>
               </Button>
             </div>
           </div>
