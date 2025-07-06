@@ -61,11 +61,11 @@ export function CustomDropdown({ itemsValue, defaultAlias}: CustomDropdownProps)
           {/* Trigger Button */}
           <Button
             onClick={handleToggle}
-            className={`justify-between w-full bg-primary hover:shadow-lg hover:opacity-95 transition-colors duration-300 ${isOpen && "scale-[0.98] shadow-inner"}`}
+            className={`justify-between w-full bg-secondary hover:shadow-lg hover:opacity-95 transition-colors duration-300 ${isOpen && "scale-[0.98] shadow-inner"}`}
             expanded={isOpen}
             haspopup={true}
             icon={
-              <ChevronDown className={`h-4 w-4 text-white transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+              <ChevronDown className={`h-4 w-4 text-primary transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
             }
           >
             <span className="truncate">{selectedAlias}</span>
@@ -73,13 +73,13 @@ export function CustomDropdown({ itemsValue, defaultAlias}: CustomDropdownProps)
 
           {/* Dropdown Menu */}
           {isOpen && (
-            <div className="absolute right-0 z-10 mt-4 w-full origin-top-right rounded-xl bg-black shadow-lg focus:outline-none">
+            <div className="absolute right-0 z-10 mt-4 w-full origin-top-right rounded-xl bg-secondary shadow-lg focus:outline-none">
               <div className="p-2 cursor-pointer" role="menu" aria-orientation="vertical">
                 {itemsValue.map((alias, index) => (
                   <Button
                     key={index}
                     onClick={() => handleSelect(alias)}
-                    className="justify-between w-full text-white hover:bg-gray-100 hover:text-gray-900"
+                    className="justify-between w-full text-primary hover:bg-gray-100 hover:text-gray-900"
                   >
                     <span className="truncate">{alias}</span>
                   </Button>
@@ -93,8 +93,8 @@ export function CustomDropdown({ itemsValue, defaultAlias}: CustomDropdownProps)
       (
         <div
           className={`inline-flex w-56 justify-between items-center
-          px-4 py-2 text-body text-white
-          bg-black border rounded-xl`}>
+          px-4 py-2 text-body text-primary
+          bg-secondary border rounded-xl`}>
           Aqui va el alias
         </div>
       )

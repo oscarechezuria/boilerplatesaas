@@ -14,7 +14,7 @@ export default function LeftContent({ onMenuClick, itemsValue }: LeftContentProp
   return (
     <div className="flex items-center gap-4">
         <div className="lg:hidden flex justify-center"> {/* Botón hamburguesa solo visible en mobile */}
-            <Menu size={36}  onClick={onMenuClick} className="text-black h-10 w-10 rounded-full p-1 cursor-pointer" />
+            <Menu size={36}  onClick={onMenuClick} className="text-secondary h-10 w-10 rounded-full p-1 cursor-pointer" />
         </div>
         <CustomDropdown itemsValue={itemsValue}/>
     </div>

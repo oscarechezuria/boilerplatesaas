@@ -35,7 +35,7 @@ export default function Features() {
   ]
 
   return (
-    <section id="features" className="py-20 bg-white">
+    <section id="features" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -53,7 +53,7 @@ export default function Features() {
               className="p-6 rounded-xl border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300"
             >
               <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
-                <feature.icon className="h-6 w-6 text-black" />
+                <feature.icon className="h-6 w-6 text-secondary" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
               <p className="text-gray-600 leading-relaxed">{feature.description}</p>

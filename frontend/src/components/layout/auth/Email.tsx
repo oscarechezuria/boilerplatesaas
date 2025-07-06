@@ -13,7 +13,7 @@ export default function Email({handleNextStep, handleEmailChange, email, isValid
   return (
     <form onSubmit={handleNextStep} className="space-y-6" noValidate>
             <div className="space-y-2">
-                <label htmlFor="email" className="text-black flex items-center gap-2 text-sm font-medium">
+                <label htmlFor="email" className="text-secondary flex items-center gap-2 text-sm font-medium">
                     <Mail className="w-4 h-4" aria-hidden="true" />
                     Correo Electrónico
                 </label>
@@ -23,7 +23,7 @@ export default function Email({handleNextStep, handleEmailChange, email, isValid
                     value={email}
                     onChange={handleEmailChange}
                     placeholder="tu@ejemplo.com"
-                    className="w-full px-3 py-2 bg-white text-black border-2 border-black rounded-md focus:border-gray-600 focus:outline-none transition-colors"
+                    className="w-full px-3 py-2 bg-primary text-secondary border-2 border-secondary rounded-md focus:border-gray-600 focus:outline-none transition-colors"
                     required
                     autoComplete="email"
                     aria-describedby="email-error"

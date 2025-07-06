@@ -85,7 +85,7 @@ export default function AuthPage() {
   return (
     <div className={`flex items-center justify-center p-4 mt-12`}>
       <div className="w-full max-w-md">
-        <div className="bg-white text-black p-8 rounded-lg border-2 border-black">
+        <div className="bg-primary text-secondary p-8 rounded-lg border-2 border-secondary">
           
           {/*TOP CONTENT*/}
           {/* Header */}
@@ -99,19 +99,19 @@ export default function AuthPage() {
             <div className="flex items-center space-x-4">
               <div
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${
-                  step >= 1 ? "bg-black text-white" : "bg-gray-300 text-gray-600"
+                  step >= 1 ? "bg-secondary text-primary" : "bg-gray-300 text-gray-600"
                 }`}
                 aria-label="Paso 1"
               >
                 1
               </div>
               <div
-                className={`w-12 h-0.5 transition-colors ${step >= 2 ? "bg-black" : "bg-gray-300"}`}
+                className={`w-12 h-0.5 transition-colors ${step >= 2 ? "bg-secondary" : "bg-gray-300"}`}
                 aria-hidden="true"
               />
               <div
                 className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium transition-colors ${
-                  step >= 2 ? "bg-black text-white" : "bg-gray-300 text-gray-600"
+                  step >= 2 ? "bg-secondary text-primary" : "bg-gray-300 text-gray-600"
                 }`}
                 aria-label="Paso 2"
               >
@@ -160,7 +160,7 @@ export default function AuthPage() {
         
         {/* ASIDE CONTENT */}
         {/* Additional Info */}
-        <div className="mt-6 text-center text-black text-sm">
+        <div className="mt-6 text-center text-secondary text-sm">
           <p>
             Al continuar, aceptas nuestros{" "}
             <a

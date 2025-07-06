@@ -58,11 +58,11 @@ export default function ModalOne({isOpen, setIsOpen, backdrop}: ModalProps) {
           }`}
         >
           {/* Backdrop */}
-          <div className="absolute inset-0 bg-black/50 transition-opacity duration-300" onClick={activeBackdrop} />
+          <div className="absolute inset-0 bg-secondary/50 transition-opacity duration-300" onClick={activeBackdrop} />
 
           {/* Modal Content */}
           <div
-            className={`relative bg-white rounded-lg shadow-xl w-full max-w-md mx-4 transform transition-all duration-300 ${
+            className={`relative bg-primary rounded-lg shadow-xl w-full max-w-md mx-4 transform transition-all duration-300 ${
               isOpen ? "scale-100 translate-y-0" : "scale-95 translate-y-4"
             }`}
           >
@@ -127,7 +127,7 @@ export default function ModalOne({isOpen, setIsOpen, backdrop}: ModalProps) {
               <Button
                 onClick={currentStep === 1 ? closeModal : prevStep}
                 variant={`${currentStep == 1 ? "danger" : "primary"}`}
-                className={`${currentStep == 1 ? "hover:bg-red-700 transition-colors duration-100" : "hover:bg-black/90 transition-colors duration-100"}`}
+                className={`${currentStep == 1 ? "hover:bg-red-700 transition-colors duration-100" : "hover:bg-secondary/90 transition-colors duration-100"}`}
               >
                 {currentStep === 1 ? (
                   <>

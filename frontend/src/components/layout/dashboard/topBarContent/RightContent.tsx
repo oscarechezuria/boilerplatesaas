@@ -20,16 +20,16 @@ export default function RightContent({pathname}: {pathname: string}) {
           <div className="hidden lg:block">
             <Button
                 onClick={openModal}
-                className={`justify-between w-full hover:bg-black hover:shadow-lg hover:opacity-95 focus:outline-none transition-colors duration-200 ${isOpen && "scale-[0.98] bg-black shadow-inner"}`}
+                className={`justify-between w-full hover:bg-secondary hover:shadow-lg hover:opacity-95 focus:outline-none transition-colors duration-200 ${isOpen && "scale-[0.98] bg-secondary shadow-inner"}`}
                 expanded={isOpen}
                 haspopup={true}
-                icon={<CirclePlus className={`h-6 w-6 text-white transition-transform duration-200`}
+                icon={<CirclePlus className={`h-6 w-6 text-primary transition-transform duration-200`}
                 />}
               >
                 <span className="truncate hidden lg:block">Triguer Modal</span>
             </Button>
           </div>
-          <CirclePlus onClick={openModal} className={`lg:hidden h-10 w-10 text-black transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}/>
+          <CirclePlus onClick={openModal} className={`lg:hidden h-10 w-10 text-secondary transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}/>
         </div>
 
         {

@@ -15,11 +15,11 @@ const sidebarItems = [
 
 export default function Sidebar({ onSelect }: SidebarProps) {
   return (
-    <aside className={`${onSelect ? 'w-full' : 'w-80'} min-h-screen bg-white p-4 pt-12 lg:pl-12 lg:pr-4 flex flex-col gap-12`}>
+    <aside className={`${onSelect ? 'w-full' : 'w-80'} min-h-screen bg-primary p-4 pt-12 lg:pl-12 lg:pr-4 flex flex-col gap-12`}>
 
         {/* Menu icon */}
         <div className="flex justify-center">
-            <X size={36}  onClick={onSelect} className="lg:hidden text-white bg-black rounded-full p-1 cursor-pointer" />
+            <X size={36}  onClick={onSelect} className="lg:hidden text-primary bg-secondary rounded-full p-1 cursor-pointer" />
         </div>
     
         {/* Sidebar Header */}
@@ -32,7 +32,7 @@ export default function Sidebar({ onSelect }: SidebarProps) {
             {sidebarItems.map(({ title, path, icon: Icon }) => (
               title !== "Cerrar Sesión" ? 
               (
-                <Link key={path} href={path} onClick={onSelect} className="flex items-center gap-4 py-2 px-6 text-body text-black hover:text-white hover:bg-black rounded-xl transition-colors">
+                <Link key={path} href={path} onClick={onSelect} className="flex items-center gap-4 py-2 px-6 text-body text-secondary hover:text-primary hover:bg-secondary rounded-xl transition-colors">
                 <Icon size={24} />
                 {title}
                 </Link>

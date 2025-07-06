@@ -24,10 +24,10 @@ export default function Button({children, onClick, type = "button", expanded, ha
 };
 
 const variantOptions = {
-  primary: "bg-black text-white",
-  secondary: "bg-white text-black",
-  danger: "bg-red-600 text-white",
-  blue: "bg-blue-600 text-white"
+  primary: "bg-secondary text-primary",
+  secondary: "bg-primary text-secondary",
+  danger: "bg-red-600 text-primary",
+  blue: "bg-blue-600 text-primary"
 }
 
   const baseClasses: string = `inline-flex items-center gap-6 rounded-xl ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`;

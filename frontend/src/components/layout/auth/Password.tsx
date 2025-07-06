@@ -26,7 +26,7 @@ export default function password({handlePrevStep, handlePasswordChange, password
   return (
         <form onSubmit={handleSubmit} className="space-y-6" noValidate>
               <div className="space-y-2">
-                <label htmlFor="password" className="text-black flex items-center gap-2 text-sm font-medium">
+                <label htmlFor="password" className="text-secondary flex items-center gap-2 text-sm font-medium">
                   <Lock className="w-4 h-4" aria-hidden="true" />
                   Contraseña
                 </label>
@@ -36,7 +36,7 @@ export default function password({handlePrevStep, handlePasswordChange, password
                   value={password}
                   onChange={handlePasswordChange}
                   placeholder="••••••••"
-                  className="w-full px-3 py-2 bg-white text-black border-2 border-black rounded-md focus:border-gray-600 focus:outline-none transition-colors"
+                  className="w-full px-3 py-2 bg-primary text-secondary border-2 border-secondary rounded-md focus:border-gray-600 focus:outline-none transition-colors"
                   required
                   minLength={6}
                   autoComplete={mode === "login" ? "current-password" : "new-password"}
@@ -58,7 +58,7 @@ export default function password({handlePrevStep, handlePasswordChange, password
                   type="button"
                   onClick={handlePrevStep}
                   variant='secondary'
-                  className="w-42 border-1 border-black hover:shadow-md"
+                  className="w-42 border-1 border-secondary hover:shadow-md"
                   aria-label="Volver al paso anterior"
                 >
                   <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" />
@@ -74,7 +74,7 @@ export default function password({handlePrevStep, handlePasswordChange, password
                   {isLoading ? (
                     <div className="flex items-center gap-2">
                       <div
-                        className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"
+                        className="w-4 h-4 border-2 border-primary border-t-transparent rounded-full animate-spin"
                         aria-hidden="true"
                       />
                       <span>Procesando...</span>
